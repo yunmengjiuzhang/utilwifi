@@ -96,7 +96,7 @@ public class EspWifiAdminSimple {
         return wifiInfo;
     }
 
-    private boolean isWifiConnected() {
+    public boolean isWifiConnected() {
         NetworkInfo mWiFiNetworkInfo = getWifiNetworkInfo();
         boolean isWifiConnected = false;
         if (mWiFiNetworkInfo != null) {
@@ -105,7 +105,7 @@ public class EspWifiAdminSimple {
         return isWifiConnected;
     }
 
-    private NetworkInfo getWifiNetworkInfo() {
+    public NetworkInfo getWifiNetworkInfo() {
         ConnectivityManager mConnectivityManager = (ConnectivityManager) mContext
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo mWiFiNetworkInfo = mConnectivityManager
