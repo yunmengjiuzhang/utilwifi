@@ -17,7 +17,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import wangfei.wifi.EspWifiAdminSimple;
+import wangfei.wifi.EspWifiSimple;
 import wangfei.wifi.EsptouchTask;
 import wangfei.wifi.IEsptouchListener;
 import wangfei.wifi.IEsptouchResult;
@@ -36,7 +36,7 @@ public class EsptouchDemoActivity extends Activity implements OnClickListener {
 
     private Button mBtnConfirm;
 
-    private EspWifiAdminSimple mWifiAdmin;
+    private EspWifiSimple mWifiAdmin;
 
     private Spinner mSpinnerTaskCount;
 
@@ -48,7 +48,7 @@ public class EsptouchDemoActivity extends Activity implements OnClickListener {
     }
 
     private void initview() {
-        mWifiAdmin = new EspWifiAdminSimple(this);
+        mWifiAdmin = new EspWifiSimple(this);
         mTvApSsid = (TextView) findViewById(R.id.tvApSssidConnected);
         mEdtApPassword = (EditText) findViewById(R.id.edtApPassword);
         mBtnConfirm = (Button) findViewById(R.id.btnConfirm);

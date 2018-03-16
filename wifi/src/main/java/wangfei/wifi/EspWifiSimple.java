@@ -11,12 +11,12 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.List;
 
-public class EspWifiAdminSimple {
+public class EspWifiSimple {
 
     private final Context mContext;
 
 
-    public EspWifiAdminSimple(Context context) {
+    public EspWifiSimple(Context context) {
         mContext = context;
     }
 
